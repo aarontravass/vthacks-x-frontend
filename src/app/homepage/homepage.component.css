@@ -1,0 +1,5 @@
+.blur {
+  background-image: url(./../../assets/images/background.webp);
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+}

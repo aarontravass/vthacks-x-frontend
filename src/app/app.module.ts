@@ -5,29 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChartsComponent } from './charts/charts.component';
-import { RouterModule, Routes } from '@angular/router';
-import {} from './botpage/botpage.component'
-const routes:Routes =[
-    { path: '', component: AppComponent },
-    { path: 'bot', component: BotpageComponent },
-    { path: 'charts', component: ChartsComponent },
-]
+import { BotpageComponent } from './botpage/botpage.component';
+import { HomepageComponent } from './homepage/homepage.component'
+
 
 @NgModule({
     declarations: [
         AppComponent,
         BotpageComponent,
-        ChartsComponent
+        ChartsComponent,
+        HomepageComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        RouterModule.forRoot(routes, {
-            useHash: false, 
-            scrollPositionRestoration: 'enabled',
-            enableTracing: true
-        });
+        AppRoutingModule
         
     ],
     providers: [],
