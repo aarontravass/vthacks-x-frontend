@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChartsComponent } from './charts/charts.component';
 import { RouterModule, Routes } from '@angular/router';
-
+import {} from './botpage/botpage.component'
 const routes:Routes =[
     { path: '', component: AppComponent },
     { path: 'bot', component: BotpageComponent },
